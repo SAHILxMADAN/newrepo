@@ -1,0 +1,31 @@
+<div>
+    <h3>Covid Responce Form</h3>
+    <form #covidForm="ngForm" (submit)="onFormSubmit(covidForm)">
+
+    <label>Employee Id: </label>
+    <input type="number" name="id" ngModel #id="ngModel" required 
+    pattern="[0-9]+"><br />
+
+    <span *ngIf="id.invalid && id.touched">
+        <small> Id is invalid</small>
+    </span><br />
+
+    <label>Affected Date :</label>
+    <input type="date" name="affectedDate" ngModel #affectedDate="ngModel" (change)="checkDate(covidForm)" required><br />
+    <span *ngIf="status && affectedDate.touched">
+        <small> Date is invalid</small>
+    </span><br />
+
+    <label>Dosages: </label>
+    <input type="number" name="dosages" ngModel #dosages="ngModel" required 
+    pattern="[2-4]"><br />
+
+    <span *ngIf="dosages.invalid && dosages.touched">
+        <small> Dosages should be greater than 2</small>
+    </span><br />
+
+    <input class="button" type="submit" value="Submit Form" [disabled]="!covidForm.valid">
+    </form>
+</div>
+
+

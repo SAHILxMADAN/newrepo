@@ -1,0 +1,22 @@
+<div>
+    <table>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Project</th>
+        <th>Manager</th>
+        <th>City</th>
+        <th>Contact</th>
+        <th>Gender</th>
+        </tr>
+        <tr *ngFor="let e of employeeArr">
+        <td>{{e.id}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.project}}</td>
+        <td>{{e.manager}}</td>
+        <td>{{e.city}}</td>
+        <td>{{e.contact}}</td>
+        <td>{{e.gender}}</td>
+        </tr>
+      </table>
+</div>

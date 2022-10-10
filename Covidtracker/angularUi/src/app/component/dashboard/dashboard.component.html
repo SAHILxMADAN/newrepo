@@ -1,0 +1,18 @@
+<div>
+    <table style="width:100%" id="employees">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Project</th>
+          <th>Affected Date</th>
+          <th>Status</th>
+        </tr>
+        <tr *ngFor="let v of victimsArr">
+          <td>{{v.employee.id}}</td>
+          <td>{{v.employee.name}}</td>
+          <td>{{v.employee.project}}</td>
+          <td>{{v.affectedDate}}</td>
+          <td>{{v.status}}</td>
+        </tr>
+      </table>
+</div>

@@ -1,0 +1,11 @@
+.booking{
+    border: 2px solid brown;
+    box-shadow: 5px 5px;
+    width: 50%;
+    margin: 100px;
+    border-radius: 10px;
+    margin-left: 200px;
+    font-size: x-large;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
